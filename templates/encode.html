@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encoded Image</title>
+    <style>
+        body {
+            background-image: url('/templates/Screenshot.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ENCODED IMAGE</h1>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='uploads/encoded.png') }}" alt="Encoded Image">
+        </div>
+    </div>
+</body>
+</html>
+
